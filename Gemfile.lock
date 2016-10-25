@@ -5,15 +5,15 @@ GEM
       simplecov (>= 0.7.1, < 1.0.0)
     codeclimate_batch (0.1.2)
       json
-    daemons (1.2.2)
     dalli (2.7.4)
     docile (1.1.5)
-    eventmachine (1.0.7)
     json (1.8.2)
+    kgio (2.10.0)
     multi_json (1.11.0)
     rack (1.6.0)
     rack-protection (1.5.3)
       rack
+    raindrops (0.17.0)
     rake (10.4.2)
     rollbar (1.4.4)
       multi_json (~> 1.3)
@@ -26,11 +26,10 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
-    thin (1.6.3)
-      daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0)
-      rack (~> 1.0)
     tilt (1.4.1)
+    unicorn (5.1.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -42,4 +41,4 @@ DEPENDENCIES
   rake
   rollbar
   sinatra
-  thin
+  unicorn

@@ -8,8 +8,8 @@ end
 
 # server
 gem "sinatra"
-gem "thin"
-gem "rollbar"
+gem "unicorn"
+gem "rollbar", require: false
 gem "dalli"
 gem "codeclimate-test-reporter"
 gem "codeclimate_batch"
